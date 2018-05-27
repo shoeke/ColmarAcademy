@@ -3,13 +3,14 @@ font-size: 18px;
 line-height: 1.4rem;
 }
 * {
-
+padding: 0;
+margin: 0;
 
 }
 body {
 width: 100%;
 background-color: #EFF0F0;
-font-family: "Helvetica", sans-serif;
+font-family: "Raleway", sans-serif;
 }
 .site-container{
   width: 90%;
@@ -17,6 +18,23 @@ font-family: "Helvetica", sans-serif;
   display: flex;
   flex-direction: column;
   border: 2px solid red;}
+
+  h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 1rem;
+
+  }
 
 header {
 display: flex;
@@ -72,32 +90,32 @@ header ul li {
 
 }
 .column-one {
-  border: 2px solid blue;
   width: 60%;
 
 }
 .column-one img {
-width: calc(100% - 48px);
+width: calc(100% - 24px);
 height: auto;
-padding: 32px 24px;
-justify-content: center;
-align-items: center;
-
+padding: 32px 0 32px 24px;
 
 }
 
 .column-two {
-  width: 40%;
+  width: calc(40% - 48px);
   display: flex;
-  flex-direction: column;
 }
 
 .learn-something {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  height: auto;
+  justify-content: center;
+  padding-left: 24px;
 }
 
 .learn-something p {
+  text-align: center;
+  padding: 8px 0;
+  color: white;
   background-color: #585858;
 }
