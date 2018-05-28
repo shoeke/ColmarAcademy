@@ -36,6 +36,14 @@ color: #393939;
     margin-bottom: 24px;
   }
 
+  h3 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 6600;
+    line-height: normal;
+    text-align: left;
+    margin-top: 16px;
+  }
+
   h4 {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
@@ -208,6 +216,10 @@ div.info-column {
   font-size: .85rem;
 }
 
+.info-column p {
+  padding-right: 1rem;
+}
+
 .read-more {
   margin-top: .3rem;
   font-size: .7rem;
@@ -223,9 +235,44 @@ div.info-column {
   width: 100%;
   text-align: center;
   padding: 32px 0;
+  margin: 0;
 }
 
 .gallery {
+  display: flex;
+  justify-content: space-around;
   border: 2px solid blue;
+}
 
+.lesson-box {
+  background-color: white;
+  width: 30%;
+  padding-bottom: 24px;
+}
+.image-lesson {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 51%;
+}
+
+div.software {
+  background-image: url("../images/course-software.jpg");
+}
+
+div.art {
+  background-image: url("../images/course-computer-art.jpg");
+}
+
+div.design {
+  background-image: url("../images/course-design.jpg");
+}
+
+.lesson-text {
+  width: 85%;
+  padding: 0 16px;
+}
+div.lesson-box p:first-of-type {
+padding: 8px 0;
 }
