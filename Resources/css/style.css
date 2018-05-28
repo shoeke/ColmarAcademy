@@ -9,7 +9,7 @@ margin: 0;
 }
 body {
 width: 100%;
-background-color: #EFF0F0;
+background-color: #dbdbdb;
 font-family: "Raleway", sans-serif;
 }
 .site-container{
@@ -27,13 +27,24 @@ font-family: "Raleway", sans-serif;
     margin-bottom: 1rem;
   }
 
+  h2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
   h4 {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     line-height: normal;
     text-align: left;
     margin-bottom: 1rem;
+  }
 
+  p {
+    font-size: .85rem;
   }
 
 header {
@@ -90,13 +101,14 @@ header ul li {
 
 }
 .column-one {
-  width: 60%;
-
+width: 60%;
+padding-left: 24px;
+border: 2px solid blue;
 }
 .column-one img {
-width: calc(100% - 24px);
+width: 100%;
 height: auto;
-padding: 32px 0 32px 24px;
+padding: 32px 0 32px 0;
 
 }
 
@@ -118,4 +130,46 @@ padding: 32px 0 32px 24px;
   padding: 8px 0;
   color: white;
   background-color: #585858;
+}
+
+.practice-wrapper p {
+  border: 2px solid pink;
+  width: 80%;
+}
+
+.credit {
+  font-size: .65rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+ .practice-wrapper {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+.more-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: row;
+  margin-left: 24px;
+  border: 3px solid yellow;
+}
+.image-column {
+  width: 35%;
+  border: 2px solid black;
+}
+.image-column img {
+width: 100%;
+padding: 16px;
+}
+
+.info-column {
+  width: calc (65%-48px);
+  border: 2px solid green;
 }
