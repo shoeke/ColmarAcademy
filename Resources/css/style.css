@@ -43,6 +43,15 @@ font-family: "Raleway", sans-serif;
     margin-bottom: 1rem;
   }
 
+  h5 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: .85rem;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: .3rem;
+  }
+
   p {
     font-size: .85rem;
   }
@@ -109,7 +118,10 @@ border: 2px solid blue;
 width: 100%;
 height: auto;
 padding: 32px 0 32px 0;
+}
 
+.column-one p {
+  width: 80%;
 }
 
 .column-two {
@@ -132,11 +144,6 @@ padding: 32px 0 32px 0;
   background-color: #585858;
 }
 
-.practice-wrapper p {
-  border: 2px solid pink;
-  width: 80%;
-}
-
 .credit {
   font-size: .65rem;
   font-weight: 600;
@@ -148,28 +155,44 @@ padding: 32px 0 32px 0;
    justify-content: space-between;
  }
 .more-info {
-  width: 40%;
+  width: calc(40% - 48px);
   display: flex;
   flex-direction: column;
-  background-color: pink;
+  margin-top: 16px;
 }
 
 .info-box {
   display: flex;
   flex-direction: row;
-  margin-left: 24px;
-  border: 3px solid yellow;
-}
-.image-column {
-  width: 35%;
-  border: 2px solid black;
-}
-.image-column img {
-width: 100%;
-padding: 16px;
+  justify-content: space-between;
+  height: auto;
 }
 
-.info-column {
-  width: calc (65%-48px);
-  border: 2px solid green;
+.info-box:nth-child(3) {
+  background-color: #cdcdcd;
+}
+
+div.image-column {
+  width: calc(35% + 16px);
+}
+.image-column img {
+box-sizing: border-box;
+padding: 16px;
+width: 100%;
+}
+
+div.info-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(65% - 16px);
+  padding-left: 16px;
+  font-size: .85rem;
+}
+
+.read-more {
+  margin-top: .3rem;
+  font-size: .7rem;
+  font-weight: 600;
+  color: #4d9bbe;
 }
