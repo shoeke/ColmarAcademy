@@ -241,6 +241,7 @@ div.info-column {
 .gallery {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   border: 2px solid blue;
 }
 
@@ -248,6 +249,7 @@ div.info-column {
   background-color: white;
   width: 30%;
   padding-bottom: 24px;
+  margin-bottom: 32px;
 }
 .image-lesson {
   width: 100%;
@@ -267,6 +269,18 @@ div.art {
 
 div.design {
   background-image: url("../images/course-design.jpg");
+}
+
+div.data {
+  background-image: url("../images/course-data.jpg");
+}
+
+div.business {
+  background-image: url("../images/course-business.jpg");
+}
+
+div.marketing {
+  background-image: url("../images/course-marketing.jpg");
 }
 
 .lesson-text {
