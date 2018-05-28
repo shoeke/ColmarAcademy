@@ -9,8 +9,9 @@ margin: 0;
 }
 body {
 width: 100%;
-background-color: #dbdbdb;
+background-color: #d9d9d9;
 font-family: "Raleway", sans-serif;
+color: #393939;
 }
 .site-container{
   width: 90%;
@@ -56,6 +57,8 @@ font-family: "Raleway", sans-serif;
     font-size: .85rem;
   }
 
+/* HEADER*/
+
 header {
 display: flex;
 flex-direction: row;
@@ -100,20 +103,19 @@ header ul li {
     list-style-type: none;
   }
 
-
-
 /* Start Wrapper*/
+
+
 .start-wrapper {
-  background-color: #cdcdcd;
+  background-color: #bcbcbc;
   display: flex;
-
-
 }
+
 .column-one {
 width: 60%;
 padding-left: 24px;
-border: 2px solid blue;
 }
+
 .column-one img {
 width: 100%;
 height: auto;
@@ -149,16 +151,27 @@ padding: 32px 0 32px 0;
   font-weight: 600;
   margin-top: 1.5rem;
 }
+
+/*Practice Wrapper*/
+
  .practice-wrapper {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   background-color: white;
  }
+
+ .practice-wrapper .column-one {
+   padding-bottom: 32px;
+ }
+
 .more-info {
   width: calc(40% - 48px);
+  height: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
+  padding-top: 16px;
+  border-left: 2px double #bcbcbc;
 }
 
 .info-box {
@@ -168,13 +181,18 @@ padding: 32px 0 32px 0;
   height: auto;
 }
 
+.info-box:nth-child(2) {
+  border-top: 2px double #bcbcbc;
+}
+
 .info-box:nth-child(3) {
-  background-color: #cdcdcd;
+  background-color: #bcbcbc;
 }
 
 div.image-column {
   width: calc(35% + 16px);
 }
+
 .image-column img {
 box-sizing: border-box;
 padding: 16px;
@@ -195,4 +213,19 @@ div.info-column {
   font-size: .7rem;
   font-weight: 600;
   color: #4d9bbe;
+}
+
+/*Learning Wrapper*/
+
+
+
+.learning-container h1 {
+  width: 100%;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.gallery {
+  border: 2px solid blue;
+
 }
