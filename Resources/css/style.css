@@ -162,18 +162,22 @@ padding: 32px 0 32px 0;
 
 /*Practice Wrapper*/
 
- .practice-wrapper {
+ .practice-wrapper, .thesis-wrapper {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+ }
+
+ .practice-wrapper {
    background-color: white;
+
  }
 
  .practice-wrapper .column-one {
    padding-bottom: 32px;
  }
 
-.more-info {
+.more-info, .exhibit-info {
   width: calc(40% - 48px);
   height: auto;
   display: flex;
@@ -229,9 +233,11 @@ div.info-column {
 
 /*Learning Wrapper*/
 
+.learning-container {
+  background-color: #cdcdcd;
+}
 
-
-.learning-container h1 {
+.learning-container h1, .thesis-container h1 {
   width: 100%;
   text-align: center;
   padding: 32px 0;
@@ -242,7 +248,6 @@ div.info-column {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 2px solid blue;
 }
 
 .lesson-box {
@@ -251,6 +256,7 @@ div.info-column {
   padding-bottom: 24px;
   margin-bottom: 32px;
 }
+
 .image-lesson {
   width: 100%;
   height: auto;
@@ -287,6 +293,12 @@ div.marketing {
   width: 85%;
   padding: 0 16px;
 }
+
 div.lesson-box p:first-of-type {
 padding: 8px 0;
+}
+
+/*Thesis Container*/
+
+
 }
