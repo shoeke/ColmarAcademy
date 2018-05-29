@@ -301,4 +301,28 @@ padding: 8px 0;
 /*Thesis Container*/
 
 
+
+video {
+  border: 2px solid blue;
+
+  width: 100%;
+  object-fit: cover;
+}
+
+.exhibit-info {
+  border: none;
+}
+
+.exhibit-info .info-box {
+  border: none;
+}
+
+.exhibit-info .info-box:first-child {
+  background-color: #bcbcbc;
+}
+/*Footer*/
+
+footer {
+  font-size: .65rem;
+  font-weight: 300;
 }
