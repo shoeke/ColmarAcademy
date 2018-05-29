@@ -300,17 +300,22 @@ padding: 8px 0;
 
 /*Thesis Container*/
 
-
-
-video {
-  border: 2px solid blue;
-
-  width: 100%;
-  object-fit: cover;
+.thesis-wrapper {
+  padding-bottom: 32px;
 }
 
+video {
+  width: 100%;
+  object-fit: cover;
+  border: 2px solid #bcbcbc;
+}
+
+.video-info h2 {
+  margin: 24px 0 8px 0;
+}
 .exhibit-info {
   border: none;
+  padding-top: 0;
 }
 
 .exhibit-info .info-box {
