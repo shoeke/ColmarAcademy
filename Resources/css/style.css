@@ -195,7 +195,7 @@ padding: 32px 0 32px 0;
 }
 
 .info-box:nth-child(3) {
-  background-color: #bcbcbc;
+  background-color: #e0e0e0;
 }
 
 div.image-column {
@@ -238,7 +238,7 @@ div.info-column {
   margin-top: .3rem;
   font-size: .7rem;
   font-weight: 600;
-  color: #1a7097;
+  color: #005981;
 }
 
 /*Learning Wrapper*/
