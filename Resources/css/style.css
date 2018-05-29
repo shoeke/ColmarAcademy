@@ -18,7 +18,8 @@ color: #393939;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;}
+  border: 2px solid #cdcdcd;
+}
 
   h1 {
     font-family: Montserrat, sans-serif;
@@ -248,6 +249,7 @@ div.info-column {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 0 72px;
 }
 
 .lesson-box {
@@ -328,6 +330,14 @@ video {
 /*Footer*/
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
   font-size: .65rem;
   font-weight: 300;
+}
+
+.terms span:first-child{
+  padding: 0 8px;
 }
