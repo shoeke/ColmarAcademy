@@ -2,6 +2,7 @@ html {
 font-size: 18px;
 line-height: 1.4rem;
 }
+
 * {
 padding: 0;
 margin: 0;
@@ -13,6 +14,7 @@ background-color: #d9d9d9;
 font-family: "Raleway", sans-serif;
 color: #393939;
 }
+
 .site-container{
   width: 90%;
   margin: 0 auto;
@@ -21,44 +23,35 @@ color: #393939;
   border: 2px solid #cdcdcd;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: Montserrat, sans-serif;
+  line-height: normal;
+  text-align: left;
+}
+
   h1 {
-    font-family: Montserrat, sans-serif;
     font-weight: 800;
-    line-height: normal;
-    text-align: left;
     margin-bottom: 1rem;
   }
 
   h2 {
-    font-family: Montserrat, sans-serif;
     font-weight: 700;
-    line-height: normal;
-    text-align: left;
     margin-bottom: 24px;
   }
 
   h3 {
-    font-family: Montserrat, sans-serif;
     font-weight: 6600;
-    line-height: normal;
-    text-align: left;
     margin-top: 16px;
   }
 
   h4 {
-    font-family: Montserrat, sans-serif;
     font-weight: 500;
-    line-height: normal;
-    text-align: left;
     margin-bottom: 1rem;
   }
 
   h5 {
-    font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-size: .85rem;
-    line-height: normal;
-    text-align: left;
     margin-bottom: .3rem;
   }
 
@@ -68,12 +61,16 @@ color: #393939;
 
 /* HEADER*/
 
-header {
+header.desktop-head {
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
 height: 64px;
+}
+
+header.mobile-head {
+  display: none;
 }
 
 .brand-logo {
@@ -83,7 +80,6 @@ height: 64px;
   padding-left: 24px;
   align-items: center;
   font-family: "Raleway", sans-serif;
-
 }
 
 .brand-logo img {
@@ -92,11 +88,11 @@ height: 64px;
 }
 
 .brand-logo span:first-child {
-  font-weight: 300;
+  font-weight: 800;
 }
 
 .brand-logo span:last-child {
-  font-weight: 600;
+  font-weight: 200;
 }
 
 header ul {
@@ -171,7 +167,6 @@ padding: 32px 0 32px 0;
 
  .practice-wrapper {
    background-color: white;
-
  }
 
  .practice-wrapper .column-one {
@@ -315,6 +310,7 @@ video {
 .video-info h2 {
   margin: 24px 0 8px 0;
 }
+
 .exhibit-info {
   border: none;
   padding-top: 0;
@@ -327,6 +323,7 @@ video {
 .exhibit-info .info-box:first-child {
   background-color: #bcbcbc;
 }
+
 /*Footer*/
 
 footer {
@@ -340,4 +337,51 @@ footer {
 
 .terms span:first-child{
   padding: 0 8px;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width : 480px) {
+
+header.desktop-head {
+  display: none;
+}
+
+header.mobile-head {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.brand-logo img, .mobile-head img {
+  height: 40px;
+}
+
+.start-wrapper {
+  flex-direction: column;
+}
+
+.column-one, .column-two {
+  width: 100%;
+  padding: 0;
+}
+
+.column-one img {
+  padding: 0;
+}
+
+.learn-something {
+  width: 100%;
+  padding: 32px 16px 24px 16px;
+}
+
+.learn-something h1 {
+  margin-bottom: 2rem;
+}
+
+.learn-something h4 {
+  margin-bottom: 1.3rem;
+}
 }

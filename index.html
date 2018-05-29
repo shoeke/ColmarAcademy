@@ -5,13 +5,12 @@
     <link rel="shortcut icon" href="favicon-ca.ico" type="image/x-icon">
 <link rel="icon" href="favicon-ca.ico" type="image/x-icon">
     <title>Colmar Academy</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="Resources/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,500,600,800" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
 
-    <!--<link rel="stylesheet" href="Resources/css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600|Roboto+Condensed:400,700" rel="stylesheet">-->
   </head>
   <body>
 
@@ -19,7 +18,7 @@
 
 
 <!--HEADER-->
-<header>
+<header class="desktop-head">
   <div class="brand-logo">
     <img src="Resources/images/ic-logo.svg" alt="Colmar Academy Logo">
     <span>COLMAR</span>
@@ -32,6 +31,13 @@
     <li>For Companies</li>
     <li>Sign In</li>
   </ul>
+</header>
+
+<header class="mobile-head">
+  <img src="Resources/images/ic-logo.svg" alt="Colmar Academy Logo">
+  <img src="Resources/images/ic-on-campus.svg" alt="schooldesk icon">
+  <img src="Resources/images/ic-online.svg" alt="computer icon">
+  <img src="Resources/images/ic-login.svg" alt="person icon">
 </header>
 
 <!--START BANNER-->
@@ -176,7 +182,7 @@
   <div class="thesis-wrapper">
     <div class="video-info column-one">
 
-      <video autoplay>
+      <video autoplay loop muted>
   <source src="Resources/video/thesis.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
