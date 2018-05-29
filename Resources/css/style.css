@@ -309,6 +309,10 @@ div.lesson-box p:first-of-type {
 padding: 8px 0;
 }
 
+.course-menu {
+  display: none;
+}
+
 /*Thesis Container*/
 
 .thesis-wrapper {
@@ -363,6 +367,10 @@ footer {
 /*Media Queries*/
 
 @media only screen and (max-width : 480px) {
+
+  .site-container {
+    border: none;
+  }
 
 header.desktop-head {
   display: none;
@@ -441,4 +449,39 @@ div.oliver-sack {
   font-size: 1rem;
   padding-top: .75rem;
 }
+/*
+.gallery {
+  flex-direction: column;
+  padding: 0 16px;
+}
+.lesson-box {
+  visibility: hidden;
+  width: 100%;
+}
+
+.lesson-text h3 {
+  visibility: visible;
+}*/
+.learning-container {
+  background-color: inherit;
+}
+
+.learning-container h1 {
+  padding-bottom: 16px;
+}
+.gallery {
+  display: none;
+}
+
+.course-menu {
+  display: block;
+}
+
+.course-menu h3 {
+  padding: 16px 16px 24px 16px;
+  margin-bottom: 8px;
+  background-color: #cdcdcd;
+}
+
+
 }
