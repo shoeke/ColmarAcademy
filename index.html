@@ -18,14 +18,14 @@
 
 
 <!--HEADER-->
-<header class="desktop-head">
+<header role="banner" class="desktop-banner">
   <div class="brand-logo">
     <img src="Resources/images/ic-logo.svg" alt="Colmar Academy Logo">
     <span>COLMAR</span>
     <span>ACADEMY</span>
   </div>
 
-  <ul>
+  <ul role="presentation">
     <li>On Campus</li>
     <li>Online</li>
     <li>For Companies</li>
@@ -33,15 +33,18 @@
   </ul>
 </header>
 
-<header class="mobile-head">
-  <img src="Resources/images/ic-logo.svg" alt="Colmar Academy Logo">
-  <img src="Resources/images/ic-on-campus.svg" alt="schooldesk icon">
-  <img src="Resources/images/ic-online.svg" alt="computer icon">
-  <img src="Resources/images/ic-login.svg" alt="person icon">
+<header role="banner" class="mobile-banner">
+  <button aria-label="Home page"><img src="Resources/images/ic-logo.svg" alt="Colmar Academy Logo"></button>
+
+  <button aria-label="Campus classes"><img src="Resources/images/ic-on-campus.svg" alt="schooldesk icon"></button>
+
+  <button aria-label="Online classes"><img src="Resources/images/ic-online.svg" alt="computer icon"></button>
+
+  <button aria-label="Sign-in"><img src="Resources/images/ic-login.svg" alt="person icon"></button>
 </header>
 
 <!--START BANNER-->
-<div class="start-wrapper">
+<div role="presentation" class="start-wrapper">
 
   <div class="column-one">
     <img src="Resources/images/banner.jpg" alt="Students studying">
@@ -51,7 +54,7 @@
     <div class="learn-something">
       <h1>Learn something<br>new everyday</h1>
       <h4>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h4>
-      <p>Start here</p>
+      <p role="button">Start here</p>
     </div>
   </div>
 
@@ -59,14 +62,14 @@
 
 <!--PRACTICE BANNER-->
   <div class="practice-wrapper">
-    <div class="column-one">
+    <div role="presentation" class="column-one">
       <img src="Resources/images/information-main.jpg" alt="Man outside reading">
       <h2>It doesn't hurt to keep practicing</h2>
-      <p>""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."</p>
+      <q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</q>
       <p class="credit">Emanuel, Sr. Stragtegist at Hiring.com</p>
     </div>
 
-    <div  class="column-two more-info">
+    <div role="navigation"  class="column-two more-info">
 
       <div class="info-box">
         <div class="image-column">
@@ -110,7 +113,7 @@
 
 <div class="learning-container">
 <h1>Start learning</h1>
-<div class="gallery">
+<div role="navigation" class="gallery">
 
   <div class="lesson-box">
     <div class="software image-lesson"></div>
@@ -189,7 +192,7 @@
 <div class="thesis-container">
   <h1>Thesis exhibit</h1>
   <div class="thesis-wrapper">
-    <div class="video-info column-one">
+    <div role="complementary" class="video-info column-one">
 
       <video autoplay loop muted>
   <source src="Resources/video/thesis.mp4" type="video/mp4">
@@ -197,11 +200,11 @@ Your browser does not support the video tag.
 </video>
 
       <h2>Reimagine urban</h2>
-      <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 
     </div><!--End of video-info column-one-->
 
-    <div class="exhibit-info column-two">
+    <div role="navigation" class="exhibit-info column-two">
 
       <div class="info-box">
         <div class="image-column">
@@ -230,7 +233,7 @@ Your browser does not support the video tag.
   </div><!--End of thesis-wrapper-->
 </div> <!--End of thesis-container-->
 
-<footer>
+<footer role="contentinfo">
   <span>&copy;2016 Colmar Academy All rights reserved</span>
   <div class="terms">
     <span>Terms</span>
